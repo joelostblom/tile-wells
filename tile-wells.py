@@ -28,8 +28,9 @@ def main():
     input_format = args.input_format.lower()
     # Prevent figure windows from showing up
     plt.ioff()
-    channels = [2,3]
     img_dir = Path(args.path)
+    channels = {x.name.split('-')[0] for x in img_dir.iterdir()
+        if x.name.endswith(input_format)}
     path_match_string = '{}' + '*.{}'.format(input_format)
     well_dir = img_dir.joinpath(path_match_string)
     tiled_img_dir = img_dir.resolve().parent.joinpath('tiled-well-images')
