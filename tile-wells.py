@@ -16,8 +16,8 @@ def main():
         'tiled fields in a layout similar to a multiwell plate. This makes it '
         'easy to get an overview of the different conditions in the plate.',
         formatter_class=argparse.RawTextHelpFormatter)
-    parser.add_argument('path', default='./', nargs='?',
-        help='path to well images (default: current directory)')
+    parser.add_argument('path', default='./sorted-well-images', nargs='?',
+        help='path to well images (default: %(default)s)')
     parser.add_argument('-i', '--input-format', default='jpg',
         help='format for images to be tiled (default: %(default)s)')
     parser.add_argument('-o', '--output-format', default='jpg',
