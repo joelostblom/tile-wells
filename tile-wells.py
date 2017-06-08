@@ -57,7 +57,7 @@ def tile_wells(img_dir, channel, input_format, output_format, timestamp_dir):
         ax.imshow(plt.imread(img_name), cmap='gray', vmin=0, vmax=256)
 #         ax.set_title(img_name.name, fontsize=20, color='white', y=0.5)
 #     fig.tight_layout(pad=20, w_pad=50, h_pad=50, rect=[0, 0, 0.992, 0.993])
-    fig.tight_layout(pad=0, w_pad=-3.7, h_pad=-2.7, rect=[0, 0, 0.992, 0.993])
+    fig.tight_layout(pad=0, w_pad=-3, h_pad=-2, rect=[0, 0, 0.992, 0.993])
     # Pyplot can't handle Path object yet, lands in 2.1
     # https://github.com/matplotlib/matplotlib/pull/8481
     print('Saving image...')
