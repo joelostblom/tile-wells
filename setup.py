@@ -8,6 +8,7 @@ setup(
     author_email='joel.ostblom@gmail.com',
     # Needed to actually package something
     packages=['tile_wells'],
+    scripts=['./tile_wells/tile_wells.py'],
     # Needed for dependencies
     install_requires=['matplotlib', 'joblib'],
     # *strongly* suggested for sharing
