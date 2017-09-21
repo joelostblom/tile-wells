@@ -2,12 +2,12 @@ from setuptools import setup
 
 setup(
     # Needed to silence warnings (and to be a worthwhile package)
-    name='tile-wells',
+    name='tile_wells',
     url='git@github.com:joelostblom/tile-wells.git',
     author='Joel Ostblom',
     author_email='joel.ostblom@gmail.com',
     # Needed to actually package something
-    packages=['tile-wells'],
+    packages=['tile_wells'],
     # Needed for dependencies
     install_requires=['matplotlib', 'joblib'],
     # *strongly* suggested for sharing
