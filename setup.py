@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     # Needed to silence warnings (and to be a worthwhile package)
     name='tile_wells',
-    url='git@github.com:joelostblom/tile-wells.git',
+    url='https://github.com/joelostblom/tile_wells/',
     author='Joel Ostblom',
     author_email='joel.ostblom@gmail.com',
     # Needed to actually package something
